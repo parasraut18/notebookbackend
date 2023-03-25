@@ -186,7 +186,7 @@ app.post('/getuser', fetchuser,  async (req, res) => {
 })
 
 
-app.listen(port, () => {
+app.listen(PORT, () => {
   console.log(`iNotebook is listening on port http://localhost:${PORT}`)
 })
 
