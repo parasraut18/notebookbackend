@@ -20,7 +20,7 @@ const BASE_URL = "http://localhost:5000";
 const User = require('./models/User');
  const mongoose =require('mongoose');
  const app = express()
- const port = 5000
+ const PORT = process.env.PORT || 5000
  //atlas
  const db = "mongodb+srv://parasraut2511:Parasriyu@1821@cluster0.yuahrsa.mongodb.net/paras?retryWrites=true&w=majority";
   //console.log(process.env.DATABASE)
@@ -187,7 +187,7 @@ app.post('/getuser', fetchuser,  async (req, res) => {
 
 
 app.listen(port, () => {
-  console.log(`iNotebook is listening on port http://localhost:${port}`)
+  console.log(`iNotebook is listening on port http://localhost:${PORT}`)
 })
 
 //notes 
