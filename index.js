@@ -22,7 +22,7 @@ const User = require('./models/User');
  const app = express()
  const PORT = process.env.PORT || 5000
  //atlas
- const db = "mongodb+srv://parasraut2511:Parasriyu@1821@cluster0.yuahrsa.mongodb.net/paras?retryWrites=true&w=majority";
+ const db = "mongodb+srv://<add your username>:<add your own password here>@cluster0.yuahrsa.mongodb.net/paras?retryWrites=true&w=majority";
   //console.log(process.env.DATABASE)
 // mongoose.connect('mongodb://127.0.0.1:27017/login')
 mongoose.connect(db,{useUnifiedTopology:true,useNewUrlParser:true})
